@@ -1,0 +1,24 @@
+REQUIRED_PYTHON: python3
+platform_params:
+  keyword_search_mode: True
+  amazon_fresh_mode: True
+  bigbasket_mode: True
+  flipkart_mode: True
+
+platform_urls:
+  amazon_fresh:
+    url_1st: http
+    url_2nd: pass
+  flipkart:
+    url: pass
+  bigbasket:
+    url: pass
+
+path_params:
+  keyword_file: keywords.txt
+  amazon_crawler_path: src/amazon_crawler
+  flipkart_crawler_path: src/flipkart_crawler
+  bigbasket_crawler_path: src/bigbasket_crawler
+  output_images_path: data/images
+  output_catalogue_csv_path: data/catalogue
+  output_catalogue_csv: catalogue.csv
