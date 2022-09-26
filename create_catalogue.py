@@ -1,4 +1,13 @@
 import sys
+import requests
+from bs4 import BeautifulSoup
+import random
+import os
+import yaml
+import csv
+import pandas as pd
+
+from src.bigbasket_crawler import BigbasketCrawler
 
 REQUIRED_PYTHON = "python3"
 
@@ -18,6 +27,8 @@ def main():
             "This project requires Python {}. Found: Python {}".format(
                 required_major, sys.version))
     else:
+        bigbasket_crawler = BigbasketCrawler()
+        bigbasket_crawler.get_soup()
         print(">>> Development environment passes all tests!")
 
 
